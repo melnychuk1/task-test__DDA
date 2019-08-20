@@ -1,0 +1,75 @@
+.header {
+  background: $header;
+  padding: 30px 0;
+  margin: auto;
+  color: $white;
+
+  &__icon{
+    display: none;
+  }
+
+  &__about-title{
+    font-size: 40px;
+    height: 45px;
+  }
+  &__menu{
+    margin-top: 30px;
+    &__block {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item{
+      display: inline-block;
+    }
+    &__item-link{
+      color: $white;
+      text-decoration: none;
+      padding-bottom: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      &:hover{
+        border-bottom: solid 1px $white;
+      }
+    }
+  }
+
+  @include screen-sm {
+    padding: 15px 0;
+    text-align: center;
+
+    &__about-title{
+      margin-top: 20px;
+      font-size: 25px;
+    }
+    &__icon {
+     display: block;
+     margin-top: 20px;
+    }
+    &__menu{
+     display: none;
+      &__block {
+        display: flex;
+        flex-direction: column;
+  }
+      &__item{
+        border: 1px solid $white;
+        padding: 10px;
+      }
+      &__item-link{
+        color: $white;
+        text-decoration: none;
+        padding-bottom: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        &:hover{
+          border-bottom: none;
+        }
+      }
+    }
+
+    _:-ms-fullscreen, :root .CLASS_NAME {
+      property:value;
+    }
+  }
+}
+

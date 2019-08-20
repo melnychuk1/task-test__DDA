@@ -1,0 +1,44 @@
+.footer{
+  margin-top: 50px;
+  background: $footer;
+  color: $white;
+  padding: 20px 0;
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contact_table {
+    border-spacing: 0 15px;
+  }
+
+  &__contact-icon{
+    text-align: center;
+  }
+
+  &__contact--item-link{
+    margin-left: 10px;
+  }
+
+  @include screen-sm{
+    &__container{
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__contact_table {
+      margin-top: 30px;
+      border-spacing: 5px 15px;
+    }
+    _:-ms-fullscreen, :root .CLASS_NAME {
+      property:value;
+    }
+  }
+}
+
+.icon{
+  font-size: 25px;
+}

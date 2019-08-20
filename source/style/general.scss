@@ -1,0 +1,51 @@
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: $white;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: SansSerif, Halvetika, sans-serif;
+}
+
+
+@include screen-lg{
+  .container {
+    width: 988px;
+    margin: auto;
+  }
+  _:-ms-fullscreen, :root .CLASS_NAME {
+    property:value;
+  }
+}
+
+@include screen-md{
+  .container {
+    width: 778px;
+    margin: auto;
+  }
+  _:-ms-fullscreen, :root .CLASS_NAME {
+    property:value;
+  }
+}
+@include screen-sm{
+  .container {
+    width: 560px;
+    margin: auto;
+  }
+  _:-ms-fullscreen, :root .CLASS_NAME {
+    property:value;
+  }
+}
+

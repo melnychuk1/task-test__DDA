@@ -1,0 +1,83 @@
+.desc{
+  display: flex;
+  &__img{
+    margin-top: 40px;
+    height: 312px;
+    width: 312px;
+  }
+  &__biography{
+    margin-left: 100px;
+  }
+  &__title{
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  &__biography-text{
+    color: $main-text;
+    margin-top: 20px;
+    line-height: 2;
+    font-size: 18px;
+  }
+}
+
+.slider{
+  width: auto;
+  margin: auto;
+  height: 300px;
+  top: 30px;
+  &__elem{
+    width: auto;
+    height: 300px;
+  }
+  &__elem1{
+    background: $slide1;
+  }
+  &__elem2{
+    background: $slide2;
+  }
+  &__elem3{
+    background: $slide3;
+  }
+}
+
+.prise{
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  &__about-title{
+    font-size: 30px;
+  }
+  &__list{
+    color: $main-text;
+    margin-top: 35px;
+    font-size: 18px;
+  }
+  &__list-item{
+    margin-top: 25px;
+  }
+  &__img{
+    height: 312px;
+  }
+}
+
+@include screen-sm{
+  .desc{
+    flex-direction: column;
+    &__biography{
+      margin-left: 0;
+    }
+  }
+  .prise{
+    flex-direction: column-reverse;
+    &__about-title{
+      margin-top: 30px;
+    }
+    &__list-item{
+      margin-top: 25px;
+    }
+  }
+  _:-ms-fullscreen, :root .CLASS_NAME {
+    property:value;
+  }
+}
+
